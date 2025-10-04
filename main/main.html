@@ -6,7 +6,6 @@
     <title>DICCIONARIO.COM</title>
     </head>
     <style>
-
         .header__container {
             display: flex;
             background-color: rgb(10, 54, 174);
@@ -18,9 +17,22 @@
             box-shadow: 0 2px 4px rgba(40, 40, 40, 0.39);
         }
 
+        .footer__container {
+            display: flex;
+            background-color: rgb(10, 54, 174);
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(40, 40, 40, 0.39);
+        }
+
         .main__container {
             display: grid;
             grid-template-rows: 10vh auto;
+
         }
 
         .body_container {
@@ -29,6 +41,8 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+            padding-bottom: 100px; /* Add padding to prevent content from being hidden behind the footer */ 
+
         }
 
         .info_box {
@@ -41,11 +55,17 @@
             text-align: center;
         }
 
+        ul.a{
+            list-style: disc;
+        }
+
+
+
         body {
             font-family: Arial, Helvetica, sans-serif ;
             margin: 0;
 
-            background-color: #fec849fc;
+            background-color: #ffc337;
         }
 
         table {
@@ -71,8 +91,8 @@
         th {
             background-color: #f2f2f2;
         }
-
         </style>
+
     </head>
 
     <body>
@@ -81,32 +101,65 @@
             <h1 style="font: 2rem Georgia, serif; color: white;">Diccionario.com</h1>
         </header>
 
+        <div class="body_container">
+            <div class="info_box">
+                <p>Bienvenido a Diccionario.com, el sitio de las mejores definiciones de Panamá.
+                </p>
+            </div>
 
-        <div class="info_box">
-            <p>Bienvenido a Diccionario.com, el sitio de las mejores definiciones de Panamá.
-            </p>
+            <table>
+                <caption>
+                    <h3>Busque por orden alfabético</h3>
+                    </h3>
+                </caption>
+                <tr>
+                    <td><a href = letraA.html>A</a></td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td><a href = letraE.html>E</a></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td><a href = letraG.html>G</a></td>
+                    <td>H</td>
+                    <td><a href = letraI.html>I</a></td>
+                    <td>J</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>L</td>
+                    <td><a href = letraM.html>M</a></td>
+                    <td>N</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>Q</td>
+                    <td>R</td>
+                    <td>S</td>
+                    <td>T</td>
+                </tr>
+                <tr>
+                    <td>U</td>
+                    <td>V</td>
+                    <td>W</td>
+                    <td>X</td>
+                    <td>Y</td>
+                <tr>
+                    <td>Z</td>
+                </tr>
+            </table>
         </div>
-
-        
-
-        <table>
-            <caption>
-                <h3>Busque por orden alfabético</h3>
-                </h3>
-            </caption>
-            <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>D</td>
-                <td>E</td>
-                <td>F</td>
-            </tr>
-        </table>
-
     </main>
-
-
-    
-</body>
+    <footer class="footer__container">
+            <h3 style="font: 1rem Arial, Helvetica, sans-serif; color: white;">Taller Práctico #3<br> Integrantes:<br> 
+                <ul>
+                <li>Guillermo Mas</li>
+                <li>Joseph Córdoba</li>
+                </ul>
+                DS V - 2025
+            </h3>
+    </footer>
+    </body>
 </html>
