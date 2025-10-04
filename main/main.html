@@ -9,18 +9,18 @@
 
         .header__container {
             display: flex;
-            background-color: white;
+            background-color: rgb(10, 54, 174);
             align-items: center;
             justify-content: center;
             height: 7vh;
             position: sticky;
             z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px rgba(40, 40, 40, 0.39);
         }
 
         .main__container {
             display: grid;
-            grid-template-rows: 7vh 93vh auto 1fr auto;
+            grid-template-rows: 10vh auto;
         }
 
         .body_container {
@@ -31,27 +31,69 @@
             padding: 20px;
         }
 
+        .info_box {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            text-align: center;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif ;
             margin: 0;
 
-            background-color: #f4f4f4;
+            background-color: #fec849fc;
         }
 
-        
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        caption{
+            background-color: #fffafae0;
+            height: 55px;
+
+            margin: auto;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #bebebe;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
         </style>
     </head>
-<body>
 
-
+    <body>
     <main class="main__container">
         <header class="header__container">
-            <h1 style="font: 2rem Georgia, serif;">Diccionario.com</h1>
+            <h1 style="font: 2rem Georgia, serif; color: white;">Diccionario.com</h1>
         </header>
-        <h2>Welcome to Diccionario.com</h2>
-        <p>Your go-to online dictionary for quick and accurate definitions.</p>
+
+
+        <div class="info_box">
+            <p>Bienvenido a Diccionario.com, el sitio de las mejores definiciones de Panamá.
+            </p>
+        </div>
+
+        
 
         <table>
+            <caption>
+                <h3>Busque por orden alfabético</h3>
+                </h3>
+            </caption>
             <tr>
                 <td>A</td>
                 <td>B</td>
